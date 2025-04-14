@@ -1,0 +1,88 @@
+.details {
+    color: rgb(137, 85, 85);
+  }
+  
+  input {
+    font-size: large;
+  }
+  
+  .form-control {
+    font-size: large;
+    height: 3rem;
+    background-color: rgb(243, 243, 243);
+  }
+  
+  .form-check-label {
+    font-size: large;
+  }
+  
+  form {
+    margin: 2rem 0;
+    border-radius: 20px;
+  }
+  
+  /* h1 {
+    text-align: center;
+    margin-top: 50px;
+  } */
+  
+  .title {
+    text-align: center; /* Corrected property for centering the text */
+    margin: 2rem 3rem;
+  }
+
+
+button{
+    width: 100%;
+}
+
+#message {
+  display: none;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.valid {
+  color: green;
+}
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+.invalid {
+  color: red;
+}
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: '✖';
+}
+
+/* CSS */
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid:focus {
+  outline: none;
+}
+
+input:invalid::placeholder {
+  color: red;
+}
+
+input:invalid + div::after {
+  content: attr(title);
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
